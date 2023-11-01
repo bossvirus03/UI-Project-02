@@ -9,6 +9,7 @@ a{
 }
 html{
     font-size: 62.5%;
+    scroll-behavior: smooth;
 }
 body{
     font-size: 1.6rem;
@@ -89,7 +90,7 @@ body{
 }
 .header .btn-signup{
     font-size: 16px;
-    width: 118px;
+    width: 144px;
     height: 50px;
     background: #171100;
     margin-left: 70px;
@@ -135,6 +136,9 @@ body{
     width: 180px;
     line-height: 64px;
 }
+.hero .info .btn-link:hover{
+    background-color: #ffbb00d7;
+}
 .hero .info .watch{
     margin-left: 15px;
     display: flex;
@@ -144,6 +148,7 @@ body{
     font-size: 18px;
     font-style: normal;
     font-weight: 600;
+    border-radius: 32px;
 }
 .hero .info .watch img{
     padding-top: 14px;
@@ -232,9 +237,14 @@ body{
     margin-bottom: 55px;
 }
 .courses .list-courses ul .item{
+    border: 1px solid #E2DFDA;
     margin-right: 30px;
     border-radius: 12px;
     background-color: #fff;
+}
+.courses .list-courses ul .item:hover{
+    border: 1px solid transparent;
+    box-shadow: 0px 18px 36px 0px rgba(0, 0, 0, 0.05);
 }
 .courses .list-courses ul .thumb{
     width: 370px;
@@ -312,7 +322,7 @@ body{
     font-weight: 600;
     line-height: 50px;
 }
-.courses .body .pay .active{
+.courses .body .pay .btn-buy:hover{
     background-color: var(--primary-color);
     text-align: center;
     font-size: 14px;
@@ -424,6 +434,9 @@ body{
     font-size: 16px;
     font-weight: 600;
 }
+.pricing .introduce .btn-pri:hover{
+    background-color: #fea31bdc;;
+}
 .pricing .banner-second .imgs{
        margin-left: auto;
 }
@@ -506,7 +519,15 @@ body{
     background: #E2DFDA;
 }
 .review .box-main .item{
+    border-radius: 16px;
     width: 370px;
+}
+.review .box-main .item:hover{
+    box-shadow: 0px 16px 32px 0px rgba(0, 0, 0, 0.05);
+    width: 370px;
+}
+.review .box-main .item .btn-rev:hover{
+    background-color: var(--primary-color);
 }
 .review .box-main .item .ask-img{
     border-radius: 16px 16px 0px 0px;
@@ -535,9 +556,6 @@ body{
     line-height: 50px;
     background-color: #171100;
 }
-.review .box-main .active{
-    background-color: var(--primary-color);
-}
 .next-page{
     position: absolute;
     width: 30px;
@@ -546,11 +564,15 @@ body{
     transform: translateX(-50%);
 }
 /* ************** footer *********** */
+footer{
+        background: #2E2100;
+}
 footer .body{
-    text-align: center;
+    height: 428px;
+    color: #fff;
 }
 footer .logo{
-    color: #171100;
+    color: #fff;
     font-family: 'Sen';
     font-size: 24px;
     font-weight: 700;
@@ -559,7 +581,88 @@ footer .logo{
 footer .logo i{
     color: #FFB900;
 }
-footer .body ul{
+footer .body .row{
+    padding-top: 96px;
     display: flex;
     justify-content: space-between;
+}
+footer .body .row .column {
+    display: block;
+}
+footer .body .row .column .desc{
+    margin-top: 18px;
+    color: #BFBCB2;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 26px;
+    }
+footer .body .row .column strong{
+    color: #FFF;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 26px;
+}
+footer .body .row .column p{
+    color: #BFBCB2;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 26px;
+}
+
+footer .body .row .column .heading{
+    position: relative;
+    color: #FFF;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 28px;
+    margin-bottom:35px;
+}
+footer .body .row .column .heading::after{
+    position: absolute;
+    content: "";
+    background: #59554B;
+    width: 130px;
+    height: 1px;
+    left: 0;
+    bottom: -14px;
+}
+footer .body .row .column .link-contact{
+    margin-top: 18px;
+    display: flex;
+}
+footer .body .row .column .link-contact li{
+    margin-right: 15px;
+}
+footer .body .row .column .item{
+    margin-top: 8px;
+    color: #BFBCB2;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 26px;
+}
+footer .body .row .column:first-child{
+    margin-left: 0;
+    width: 276px;
+}
+footer .body .row .column:last-child{
+    width: 231px;
+}
+footer .body .copyright{
+    margin-top: 67px;
+    color: #807D74;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 26px;
+    position: relative;
+}
+
+footer .body .copyright::after{
+    content: "";
+    width: 100%;
+    height: 1px;
+    background: #59554B;
+    position: absolute;
+    top: -28px;
+    left: 0;
 }

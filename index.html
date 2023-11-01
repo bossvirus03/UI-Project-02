@@ -16,23 +16,23 @@
         <div class="content">
             <div class="body">
                 <!-- logo -->
-                <a href="#!">
+                <a href="#home">
                     <div class="logo">Lesson<i>.</i></div>
                 </a>
                 <!-- nav -->
                 <nav class="navbar">
                     <ul>
                         <li class="active">
-                            <a href="#!">Home</a>
+                            <a href="#home">Home</a>
                         </li>
                         <li>
-                            <a href="#!">Courses</a>
+                            <a href="#courses">Courses</a>
                         </li>
                         <li>
-                            <a href="#!">Pricing</a>
+                            <a href="#pricing">Pricing</a>
                         </li>
                         <li>
-                            <a href="#!">Reviews</a>
+                            <a href="#review">Reviews</a>
                         </li>
                     </ul>
                 </nav>
@@ -45,7 +45,7 @@
     </header>
     <main>
         <!-- Hero -->
-        <div class="hero">
+        <div id="home" class="hero">
             <div class="content">
                 <div class="body">
                     <img src="./assets/img/guy-lesson.png" alt="" class="img-main">
@@ -97,7 +97,7 @@
             </div>
         </div>
         <!-- Courses -->
-        <div class="courses">
+        <div id="courses" class="courses">
             <div class="content">
                 <div class="body">
                     <div class="move">
@@ -129,10 +129,10 @@
                                 </div>
                             </li>
                             <li class="item">
-                                <img class="thumb" src="./assets/img/design.webp" alt="">
+                                <img class="thumb" src="./assets/img/developer.jpg" alt="">
                                 <div class="main-item">
                                     <div class="title">
-                                        <div class="name">Basic web design</div>
+                                        <div class="name">UI/UX design</div>
                                         <div class="star">
                                             <img src="./assets/img/star.svg" alt="">
                                             <p>4.5</p>
@@ -148,10 +148,10 @@
                                 </div>
                             </li>
                             <li class="item">
-                                <img class="thumb" src="./assets/img/design.webp" alt="">
+                                <img class="thumb" src="./assets/img/marketing.jpg" alt="">
                                 <div class="main-item">
                                     <div class="title">
-                                        <div class="name">Basic web design</div>
+                                        <div class="name">Web App design</div>
                                         <div class="star">
                                             <img src="./assets/img/star.svg" alt="">
                                             <p>4.5</p>
@@ -196,7 +196,7 @@
             </div>
         </div>
         <!-- Pricing -->
-        <div class="pricing">
+        <div id="pricing" class="pricing">
             <div class="content">
                 <div class="body">
                     <div class="banner">
@@ -229,7 +229,7 @@
             </div>
         </div>
         <!-- Reviews -->
-        <div class="review">
+        <div id="review" class="review">
             <div class="content">
 
                 <body>
@@ -276,32 +276,78 @@
     <footer>
         <div class="content">
             <div class="body">
-                <ul>
-                    <li class="item">
+                <div class="row">
+                    <div class="column">
                         <div class="logo">Lesson<i>.</i></div>
                         <div class="desc">Need to help for your dream Career? trust us. With Lesson, study becomes a lot
                             easier with us.</div>
-                        <div class="contact">
-                            <ul>
-                                <li>
-                                    <a href=""></a>
-                                </li>
-                                <li>
-                                    <a href=""></a>
-                                </li>
-                                <li>
-                                    <a href=""></a>
-                                </li>
-                                <li>
-                                    <a href=""></a>
-                                </li>
-                            </ul>
-                        </div>
-                    </li>
-                    <li class="item">Item 1</li>
-                    <li class="item">Item 1</li>
-                    <li class="item">Item 1</li>
-                </ul>
+                        <ul class="link-contact">
+                            <li>
+                                <a href=""><img src="./assets/img/Twitter.svg" alt=""></a>
+                            </li>
+                            <li>
+                                <a href=""><img src="./assets/img/Facebook.svg" alt=""></a>
+                            </li>
+                            <li>
+                                <a href=""><img src="./assets/img/Linkedin.svg" alt=""></a>
+                            </li>
+                            <li>
+                                <a href=""><img src="./assets/img/Instagram.svg" alt=""></a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="column">
+                        <h3 class="heading">Company</h3>
+                        <ul>
+                            <a href="#">
+                                <li class="item">About Us</li>
+                            </a>
+                            <a href="#">
+                                <li class="item">Features</li>
+                            </a>
+                            <a href="#">
+                                <li class="item">Our Pricing</li>
+                            </a>
+                            <a href="#">
+                                <li class="item">Latest News</li>
+                            </a>
+                        </ul>
+                    </div>
+                    <div class="column">
+                        <h3 class="heading">Support</h3>
+                        <ul>
+                            <a href="#">
+                                <li class="item">FAQ’s</li>
+                            </a>
+                            <a href="#">
+                                <li class="item">Terms & Conditions</li>
+                            </a>
+                            <a href="#">
+                                <li class="item">Privacy Policy</li>
+                            </a>
+                            <a href="#">
+                                <li class="item">Contact Us</li>
+                            </a>
+                        </ul>
+                    </div>
+                    <div class="column">
+                        <h3 class="heading">Address</h3>
+                        <ul>
+                            <li class="item">
+                                <strong>Location: </strong>
+                                27 Division St, New York, NY 10002, USA
+                            </li>
+                            <li class="item">
+                                <strong>Phone: </strong>
+                                + 000 1234 567 890
+                            </li>
+                            <li class="item">
+                                <strong>Email: </strong>
+                                email@gmail.com
+                            </li>
+                        </ul>
+                    </div>
+                </div>
                 <div class="copyright">Copyright ©2022 by Loi webdesign.gdn All rights reserved</div>
             </div>
         </div>
